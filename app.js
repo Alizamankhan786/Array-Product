@@ -107,7 +107,7 @@ const products = [
 ];
 
 
-const div = document.querySelector(`.card`);
+const div = document.querySelector(`#users`);
 
 
 for (let i = 0; i < products.length; i++) {
@@ -126,6 +126,7 @@ for (let j = 0; j < products[i].description.length; j++) {
 }
 
 div . innerHTML +=`
+<div class="container">
 <h2>
 Name: ${products[i].name}
 </h2>
@@ -138,3 +139,5 @@ Description: ${products[i].description}
     
     
 }
+
+
